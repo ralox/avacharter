@@ -1,4 +1,3 @@
-
 /*  This font was used to make the "AVA" logo at the top of the page
 @font-face{
 	font-family: hall-fetica-wide;
@@ -282,6 +281,7 @@ hgroup{/*holds the logo and subtitle*/
 }
 
 #contact1,#contact2{ /*The contact information should hug the top right corner*/
+	visibility: hidden; /*Hide by default, javascript will reveal as needed*/
 	display: inline-block;
 	position: relative;
 	top:-15px;
