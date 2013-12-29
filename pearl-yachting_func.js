@@ -21,11 +21,11 @@ var domain = String(window.location);
 
 
 //AUTO-RUN ON-LOAD
-if (domain.indexOf('avacharter') >= 0){
+if (domain.indexOf('pearl') >= 0){
     var c1 = document.getElementById('contact1');
     var c2 = document.getElementById('contact2');
-    c1.style.visibility = 'hidden';
-    c2.style.visibility = 'hidden';
+    c1.style.visibility = 'visible';
+    c2.style.visibility = 'visible';
 }
 
 
