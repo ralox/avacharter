@@ -24,8 +24,10 @@ var domain = String(window.location);
 if (domain.indexOf('pearl') >= 0){
     var c1 = document.getElementById('contact1');
     var c2 = document.getElementById('contact2');
+    var tagline = document.getElementByTagName('H2')[0];
     c1.style.visibility = 'visible';
     c2.style.visibility = 'visible';
+    tagline.innerHTML = "Pearl Yachting Monaco";
 }
 
 
