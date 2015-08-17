@@ -1,4 +1,4 @@
-<a name="entertainment"></a>
+<?php include 'header.php' ?>
 <h2 class="section-title">Entertainment & Services</h2>
 <div class="section section-entertainment">
 	<div class="section-background obscure">
@@ -65,3 +65,4 @@
 		<TR><TD>Fishing Equipment</TD></TR>
 	</TABLE>
 </div>
+<?php include 'footer.php' ?>

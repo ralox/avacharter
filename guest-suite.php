@@ -1,4 +1,4 @@
-<a name="guest"></a>
+<?php include 'header.php' ?>
 <h2 class="section-title">Guest Suite</h2>
 <div class="section section-guest">
 	<div class="section-background">
@@ -23,3 +23,4 @@
 		</p>
 	</div>
 </div>
+<?php include 'footer.php' ?>

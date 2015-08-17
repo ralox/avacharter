@@ -1,15 +1,32 @@
+		</main>
 		<footer class="footer">
 			<nav class="navigation">
-				<div class="nav" title="Home" data-link-to="home.php">Home</div>
-				<div class="nav" title="Decks" data-link-to="decks.php">Decks</div>
-				<div class="nav" title="Saloon" data-link-to="saloon.php">Saloon</div>
-				<div class="nav" title="Master Suite" data-link-to="master-suite.php">Master Suite</div>
-				<div class="nav" title="Guest Suite" data-link-to="guest-suite.php">Guest Suite</div>
-				<div class="nav" title="Locations" data-link-to="locations.php">Locations</div>
-				<div class="nav" title="Entertainment" data-link-to="entertainment.php">Entertainment</div>
-				<div class="nav" title="Gallery" data-link-to="gallery.php">Gallery</div>
+				<a title="Home" href="home.php">
+					<div class="nav-item">Home</div>
+				</a>
+				<a title="Decks" href="decks.php">
+					<div class="nav-item">Decks</div>
+				</a>
+				<a title="Saloon" href="saloon.php">
+					<div class="nav-item">Saloon</div>
+				</a>
+				<a title="Master Suite" href="master-suite.php">
+					<div class="nav-item">Master Suite</div>
+				</a>
+				<a title="Guest Suite" href="guest-suite.php">
+					<div class="nav-item">Guest Suite</div>
+				</a>
+				<a title="Locations" href="locations.php">
+					<div class="nav-item">Locations</div>
+				</a>
+				<a title="Entertainment" href="entertainment.php">
+					<div class="nav-item">Entertainment</div>
+				</a>
+				<a title="Gallery" href="gallery.php">
+					<div class="nav-item">Gallery</div>
+				</a>
 			</nav>
-			<div class="contact">
+			<div class="contact hidden">
 				<div class="contact-block">
 					<div class="name">
 						Captain Jeffrey Pearlman

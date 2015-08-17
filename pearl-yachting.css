@@ -39,6 +39,11 @@ body {
 	color: #444;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
 .content {
 	padding: 0;
 	margin: auto;
@@ -47,6 +52,10 @@ body {
 
 [data-link-to] {
 	cursor: pointer;
+}
+
+.hidden {
+	display: none !important;
 }
 
 
@@ -165,8 +174,6 @@ body {
 
 .contact-block a {
 	margin: 0.2em 0;
-	text-decoration: none;
-	color: inherit;
 }
 
 /*==== Navigation ====*/
@@ -184,10 +191,10 @@ body {
 	column-gap: 2em;
 	column-rule: 0.1em solid rgba(192,205,220,0.2);
 	font-family: lane, sans-serif;
-	text-transform: uppercase;
 }
 
-.nav {
+.nav-item {
+	text-transform: uppercase;
 	margin-bottom: 0.5em;
 }
 
@@ -327,11 +334,7 @@ body {
 
 /*==== Layout & Specs ====*/
 .details-reveal {
-	display: none;
-		/* 
-			none on page load
-			toggle to flex
-		*/
+	display: flex;
 	flex-flow: row wrap;
 	padding: 4em 2em;
 }

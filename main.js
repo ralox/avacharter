@@ -1,6 +1,6 @@
 ;(function () {
 	if (window.location.host.indexOf('pearl')){
-	    $('.contact').css('display','flex');
+	    $('.contact').removeClass('hidden');
 	    $('.logo-tagline').text('Pearl Yachting Monaco');
 	}
 }());
@@ -18,17 +18,5 @@ $(document).ready(function(){
 		});
 	};
 	
-	function navClick(){
-		$('.nav').click(function(){
-			$('.content').load($(this).data('link-to'), function(){
-				setImages();
-				$('body').scrollTop(0);
-				navClick();
-				console.log('done dit it');
-			});
-		});
-	};
-	
 	setImages();
-	navClick();
 });

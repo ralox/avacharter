@@ -1,4 +1,4 @@
-<a name="master"></a>
+<?php include 'header.php' ?>
 <h2 class="section-title">Master Suite</h2>
 <div class="section section-master">
 	<div class="section-background obscure">
@@ -21,3 +21,4 @@
 		</p>
 	</div>
 </div>
+<?php include 'footer.php' ?>

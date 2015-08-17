@@ -1,4 +1,4 @@
-<a name="decks"></a>
+<?php include 'header.php' ?>
 <h2 class="section-title">Decks</h2>
 <div class="section section-decks">
 	<div class="section-background">
@@ -37,3 +37,4 @@
 		</p>
 	</div>
 </div>
+<?php include 'footer.php' ?>

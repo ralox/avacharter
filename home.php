@@ -1,3 +1,4 @@
+<?php include 'header.php' ?>
 <div class="section section-home">
 	<div class="section-background">
 		<div class="home-traits">
@@ -9,7 +10,7 @@
 			<div class="cover-image" data-image="images/brochure/Full/SkyView.png" title="Ava at sea"></div>
 		</div>
 	</div>
-	<div class="details-reveal">
+	<div class="details-reveal hidden">
 		<div class="layout">
 			<img class="layout-graphic" src="images/specs.png" alt="full structural layout"/ height="389" width="250">
 			<div class="layout-graphic-legend">
@@ -71,17 +72,26 @@
 		</p>
 	</div>
 	<div class="photo-nav section-background half-screen">
-		<div class="nav" title="Accomodations" data-link-to="accomodations.php">
-			<div class="cover-image" data-image="http://placekitten.com/256/512"></div>
+		<div class="nav" title="Accomodations">
+			<a href="accomodations.php">
+				<div class="cover-image" data-image="http://placekitten.com/256/512"></div>
+			</a>
 		</div>
-		<div class="nav" title="Locations" data-link-to="locations.php">
-			<div class="cover-image" data-image="http://placekitten.com/512/400"></div>
+		<div class="nav" title="Locations">
+			<a href="locations.php">
+				<div class="cover-image" data-image="http://placekitten.com/512/400"></div>
+			</a>
 		</div>
-		<div class="nav" title="Entertainment" data-link-to="entertainment.php">
-			<div class="cover-image" data-image="http://placekitten.com/350/512"></div>
+		<div class="nav" title="Entertainment">
+			<a href="entertainment.php">
+				<div class="cover-image" data-image="http://placekitten.com/350/512"></div>
+			</a>
 		</div>
-		<div class="nav" title="Gallery" data-link-to="gallery.php">
-			<div class="cover-image" data-image="http://placekitten.com/512/512"></div>
+		<div class="nav" title="Gallery">
+			<a href="gallery.php">
+				<div class="cover-image" data-image="http://placekitten.com/512/512"></div>
+			</a>
 		</div>	
 	</div>
 </div>
+<?php include 'footer.php' ?>

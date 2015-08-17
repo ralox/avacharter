@@ -1,4 +1,4 @@
-<a name="locations"></a>
+<?php include 'header.php' ?>
 <h2 class="section-title">Berthing Locations</h2>
 <div class="section">
 	<div class="section-background obscure">
@@ -29,3 +29,4 @@
 		</P>
 	</div>
 </div>
+<?php include 'footer.php' ?>
