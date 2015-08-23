@@ -10,7 +10,8 @@
 			<div class="cover-image" data-image="images/brochure/Full/SkyView.png" title="Ava at sea"></div>
 		</div>
 	</div>
-	<div class="details-reveal hidden">
+	<div class="details-reveal slideHidden-vertical">
+		<div title="close" class="details-trigger details-close hidden"></div>
 		<div class="layout">
 			<img class="layout-graphic" src="images/specs.png" alt="full structural layout"/ height="389" width="250">
 			<div class="layout-graphic-legend">
@@ -66,32 +67,29 @@
 		</div>
 	</div>
 	<div class="dark-text-box">
+		<div title="show specs" class="details-trigger details-open"></div>
 		<p>
-			Ava is an elegant, spacious, and luxurious yacht and an equally comfortable, 
+			Ava is an elegant, spacious, and luxurious yacht and an equally comfortable,
 			strong, and seaworthy vessel ideal for corporate, friends, and family charters.
 		</p>
 	</div>
 	<div class="photo-nav section-background half-screen">
-		<div class="nav" title="Accomodations">
-			<a href="accomodations.php">
-				<div class="cover-image" data-image="http://placekitten.com/256/512"></div>
-			</a>
-		</div>
-		<div class="nav" title="Locations">
-			<a href="locations.php">
-				<div class="cover-image" data-image="http://placekitten.com/512/400"></div>
-			</a>
-		</div>
-		<div class="nav" title="Entertainment">
-			<a href="entertainment.php">
-				<div class="cover-image" data-image="http://placekitten.com/350/512"></div>
-			</a>
-		</div>
-		<div class="nav" title="Gallery">
-			<a href="gallery.php">
-				<div class="cover-image" data-image="http://placekitten.com/512/512"></div>
-			</a>
-		</div>	
+		<a href="accomodations.php" class="nav" title="Accomodations">
+			<div class="photo-nav-title">Accomodations</div>
+			<div class="cover-image" data-image="http://placekitten.com/256/512"></div>
+		</a>
+		<a href="locations.php" class="nav" title="Locations">
+			<div class="photo-nav-title">Locations</div>
+			<div class="cover-image" data-image="http://placekitten.com/512/400"></div>
+		</a>
+		<a href="entertainment.php" class="nav" title="Entertainment">
+			<div class="photo-nav-title">Entertainment</div>
+			<div class="cover-image" data-image="http://placekitten.com/350/512"></div>
+		</a>
+		<a href="gallery.php" class="nav" title="Gallery">
+			<div class="photo-nav-title">Gallery</div>
+			<div class="cover-image" data-image="http://placekitten.com/512/512"></div>
+		</a>
 	</div>
 </div>
 <?php include 'footer.php' ?>
