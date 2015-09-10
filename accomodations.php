@@ -6,7 +6,7 @@
 	<body>
 		<?php include 'header.php' ?>
 		<main class="content">
-			<h2>Accomodations</h2>
+			<h2 class="page-title">Accomodations</h2>
 			<a href="decks.php">
 				<div class="nav-item">Decks</div>
 			</a>
@@ -19,13 +19,7 @@
 			<a href="guest-suite.php">
 				<div class="nav-item">Guest Suite</div>
 			</a>
-			<a href="locations.php">
-				<div class="nav-item">Locations</div>
-			</a>
-			<a href="entertainment.php">
-				<div class="nav-item">Entertainment</div>
-			</a>
-			<ul class="accomodations">
+			<ul class="specs specs-accomodations">
 				<li><TD>Number of Cabins:</div>5</li>
 				<li><TD>Number of Guests:</div>11</li>
 				<li><TD>Cabin Configuration:</TD>

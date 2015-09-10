@@ -1,5 +1,5 @@
 <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="pearl-yachting.css">
+<link rel="stylesheet" type="text/css" href="css/pearl-yachting.css">
 <title>AVA - Luxury Yacht Charters</title>
 
 <meta name="description" content="Luxury yacht charter">

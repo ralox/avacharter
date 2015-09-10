@@ -13,6 +13,7 @@
 	letter-spacing: 4px;
 	-webkit-transform: rotateY(30deg) rotateZ(1deg);
 	transform: rotateY(30deg) rotateZ(1deg);
+	animation: 2s 0 waterBob repeat;
 }
 
 .trait:first-child {
@@ -25,6 +26,17 @@
 	font-size: 1.2em;
 	margin-left: 1.2em;
 	color: rgba(250,250,250,0.7);
+}
+
+@keyframes waterBob {
+	from {
+		-webkit-transform: rotateY(30deg) rotateZ(1deg);
+		transform: rotateY(30deg) rotateZ(1deg);
+	}
+	to {
+		-webkit-transform: rotateY(35deg) rotateZ(2deg);
+		transform: rotateY(35deg) rotateZ(2deg);
+	}
 }
 
 .dark-text-box {
@@ -49,7 +61,7 @@
 	top: -4em;
 	width: 4em;
 	height: 4em;
-	background-image: url(images/info.svg);
+	background-image: url(../images/info.svg);
 	background-repeat: no-repeat;
 	background-size: 1em;
 	background-position: 2.75em 1.75em;
@@ -82,7 +94,7 @@
 	top: 0;
 	width: 4em;
 	height: 4em;
-	background-image: url(images/cancel-white.svg);
+	background-image: url(../images/cancel-white.svg);
 	background-repeat: no-repeat;
 	background-size: 2.5em;
 	background-position: 1em 0.5em;
@@ -164,22 +176,6 @@
 .details-reveal ul {
 	margin: 0;
 	padding: 0;
-}
-
-.specs {
-	flex-grow: 2;
-}
-
-.spec-title {
-	font-size: 2.5rem;
-	font-weight: 100;
-	margin: 0.25em 0;
-}
-
-.spec-name {
-	display: inline;
-	margin-right: 0.5em;
-	font-weight: bold;
 }
 
 .layout {
