@@ -6,8 +6,8 @@
 	<body>
 		<?php include 'header.php' ?>
 		<main class="content">
-			<h2 class="section-title">Saloon &amp; Dining</h2>
-			<div class="section section-saloon">
+			<h2 class="page-title">Saloon &amp; Dining</h2>
+			<div class="section">
 				<div class="section-background">
 					<div class="section-golden">
 						<div class="cover-image" data-image="images/brochure/Full/saloon.png" title="the saloon"></div>

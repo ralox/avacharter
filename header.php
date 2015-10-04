@@ -5,4 +5,5 @@
 			<h2 class="logo-tagline">Luxury Yacht Charters</h2>
 		</hgroup>
 	</a>
+	<div class="white-bar"></div>
 </header>

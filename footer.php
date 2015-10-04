@@ -17,8 +17,8 @@
 <a title="Locations" href="locations.php">
 	<div class="nav-item">Locations</div>
 </a>
-<a title="Entertainment" href="entertainment.php">
-	<div class="nav-item">Entertainment</div>
+<a title="Entertainment" href="services.php">
+	<div class="nav-item">Services</div>
 </a>
 <a title="Gallery" href="gallery.php">
 	<div class="nav-item">Gallery</div>

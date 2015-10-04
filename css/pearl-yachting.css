@@ -39,17 +39,17 @@ body {
 	color: #444;
 }
 
+main {
+	padding: 0;
+	margin: 0 auto -1em;
+	min-height: 50em;
+	overflow: hidden;
+}
+
 a {
 	text-decoration: none;
 	color: inherit;
 }
-
-.content {
-	padding: 0;
-	margin: auto;
-	padding-top: 0.5em;
-}
-
 .hidden {
 	display: none !important;
 }
@@ -77,13 +77,14 @@ a {
 |//////////////////// PAGE HEADER \\\\\\\\\\\\\\\\\\\\\\\|
 \*======================================================*/
 .header {
-	position: absolute;
-	padding: 1em;
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
 	justify-content: space-between;
+	font-size: 1rem;
 }
+
+
 
 .header:after {
 	content: "";
@@ -99,9 +100,11 @@ a {
 }
 
 .logo {
-	position: relative;
 	z-index: 1;
-	font-size: 2rem;
+	position: absolute;
+	top: 0.5em;
+	left: 0.5em;
+	font-size: 2em;
 	margin: 0.3em 0 0 0.4em;
 }
 
@@ -114,9 +117,9 @@ a {
 	-webkit-font-kerning: none;
 	font-kerning: none;
 	color:rgb(68,68,68,1);
-	-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.5)), color-stop(80%, rgba(255,255,255,.2)), to(rgba(0,0,0,.8)));
-	mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)), color-stop(80%, rgba(255,255,255,.2)), to(rgba(0,0,0,.8)));
-	text-shadow:  0.01em 0.01em 0.01em rgba(50,50,255,0.5);
+	-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,.5)), color-stop(78%, rgba(255,255,255,0.3)), to(rgba(0,0,0,.8)));
+	mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)), color-stop(78%, rgba(255,255,255,0.3)), to(rgba(0,0,0,.8)));
+	/*text-shadow:  0.01em 0.01em 0.01em rgba(50,50,255,0.5);*/
 }
 
 .logo-tagline {
@@ -127,6 +130,15 @@ a {
 	text-transform: uppercase;
 	color: #999;
 	color:rgba(68,68,68,.7);
+}
+
+.white-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 0.5em;
+	width: 100vw;
+	background: #fff;
 }
 
 
@@ -146,9 +158,9 @@ a {
 
 .footer [data-link-to]:hover,
 .footer a:hover {
-	-webkit-transition: all 300ms;
-	-moz-transition: all 300ms;
-	transition: all 300ms;
+	-webkit-transition: color 300ms;
+	-moz-transition: color 300ms;
+	transition: color 300ms;
 	color: rgba(227,204,33,1);
 }
 
@@ -197,13 +209,10 @@ a {
 	flex: 1;
 	-webkit-column-width: 10em;
 	-webkit-column-gap: 2em;
-	-webkit-column-rule: 0.1em solid rgba(192,205,220,0.2);
 	-moz-column-width: 10em;
 	-moz-column-gap: 2em;
-	-moz-column-rule: 0.1em solid rgba(192,205,220,0.2);
 	column-width: 10em;
 	column-gap: 2em;
-	column-rule: 0.1em solid rgba(192,205,220,0.2);
 	font-family: lane, sans-serif;
 }
 
@@ -213,10 +222,10 @@ a {
 }
 
 
-/*========================================================*\
-|//////////////////// SECTION TOOLS \\\\\\\\\\\\\\\\\\\\\\\|
-\*========================================================*/
-.section-title {
+/*=====================================================*\
+|//////////////////// PAGE TOOLS \\\\\\\\\\\\\\\\\\\\\\\|
+\*=====================================================*/
+.page-title {
 	font-family: lane, sans-serif;
 	font-size: 5rem;
 }
@@ -231,15 +240,15 @@ a {
 	display: -ms-flex;
 	display: flex;
 	min-width: 100%;
-	-webkit-transition: all 1s;
-	-moz-transition: all 1s;
-	transition: all 1s;
+	-webkit-transition: transform 1s;
+	-moz-transition: transform 1s;
+	transition: transform 1s;
 }
 
 /*==== Space-Dividing Utilities ====*/
 .section-full {
-	width: 100%;
-	height: 100%;
+	min-width: 100%;
+	min-height: 100%;
 }
 
 .section-golden {
@@ -266,7 +275,7 @@ a {
 	min-width: 100%;
 	min-height: 100%;
 	height: auto;
-	/* background: is set dynamically via js */
+	/* background: is set by the individual element */
 	background-repeat: no-repeat;
 	background-position: center center;
 	-webkit-background-size: cover;
@@ -299,4 +308,21 @@ a {
 	display: inline;
 	margin-right: 0.5em;
 	font-weight: bold;
+}
+
+/*=========================================================*\
+|//////////////////// MAGAZINE TOOLS \\\\\\\\\\\\\\\\\\\\\\\|
+\*=========================================================*/
+
+.bottom-left-bracket {
+	border-width: 0.75em;
+	border-style: solid;
+	-webkit-border-image: 
+		-webkit-linear-gradient(45deg,  #444, #444 15%, rgba(0,0,0,0) 15%) 1;
+	-moz-border-image:
+		-moz-linear-gradient(45deg,  #444, #444 15%, rgba(0,0,0,0) 15%) 1;
+	-o-border-image:
+		-o-linear-gradient(45deg,  #444, #444 15%, rgba(0,0,0,0) 15%) 1;
+	border-image:
+		linear-gradient(45deg, #444, #444 15%, rgba(0,0,0,0) 15%) 1;
 }

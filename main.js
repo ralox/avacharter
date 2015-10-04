@@ -12,6 +12,7 @@ $(document).ready(function(){
 		$('.details-trigger').toggleClass('hidden');
 	});
 	
+	/*
 	var setImages = function() {
 		function setBackground(target){
 			var source = $(target).data('image');
@@ -24,4 +25,5 @@ $(document).ready(function(){
 	};
 	
 	setImages();
+	*/
 });
