@@ -1,0 +1,198 @@
+/*====================================================*\
+|//////////////////// DECKS.PHP \\\\\\\\\\\\\\\\\\\\\\\|
+\*====================================================*/
+
+.content {
+	margin-bottom: 0.5em;
+}
+
+.decks-sections {
+	display: flex;
+}
+
+
+/*===============================================*\
+|//////////////////// TEXT \\\\\\\\\\\\\\\\\\\\\\\|
+\*===============================================*/
+
+.decks-text {
+	order: 2;
+}
+
+.decks-title {
+	position: relative;
+	top: 6em;
+	height: 5em;
+	width: 15em;
+	margin: auto;
+	text-align: center;
+	font-size: 0.5rem;
+	color: #444;
+	background: #fff;
+}
+
+.decks-title:before,
+.decks-title:after {
+	content: "";
+	z-index: -1;
+	position: absolute;
+}
+
+.decks-title:before {
+	left: -0.75em;
+	top: -0.75em;
+	width: 16.5em;
+	height: 6.5em;
+	background-image: linear-gradient(
+		to right,
+		#444 0%,
+		#444 10%,
+		transparent 10%,
+		transparent 90%,
+		#444 90%,
+		#444 100%
+	);
+}
+
+.decks-title:after {
+	left: -3em;
+	top: 0;
+	width: 21em;
+	height: 5em;
+	background-image: linear-gradient(
+		to bottom,
+		transparent 0%,
+		transparent 43%,
+		#444 43%,
+		#444 57%,
+		transparent 57%,
+		transparent 100%
+	);
+}
+
+.page-title {
+	font-size: 5em;
+	margin: 0;
+}
+
+.decks-text {
+	min-width: 320px;
+	flex-basis: 33%;
+	text-align: justify;
+}
+
+.decks-text p {
+	padding: 5em;
+}
+
+
+/*======================================================*\
+|//////////////////// DECK IMAGES \\\\\\\\\\\\\\\\\\\\\\\|
+\*======================================================*/
+
+.decks-images {
+	order: 1;
+	flex-basis: 66%;
+	background: #444;
+	padding: 5em;
+	display: flex;
+	flex-flow: column;
+}
+
+.image-row {
+	display: flex;
+	border-right: 0.5em solid #fff;
+}
+
+.image-row:last-child {
+	border-bottom: 0.5em solid #fff;
+}
+
+.image-row div {
+	flex-grow: 1;
+}
+
+.full-width,.half-width {
+	background-size: cover;
+	background-position: center;
+	border-top: 0.5em solid #fff;
+	border-left: 0.5em solid #fff;
+}
+
+.half-width {
+	width: 50%;
+}
+
+
+.full-width img {
+	width: 100%;
+}
+
+.half-width img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+img {
+	/* display is handled via the background */ 
+	opacity: 0;
+}
+
+#aftdeck {
+	background-image: url(../images/brochure/full/aftdeck.png);
+}
+
+#sundeck-a {
+	background-image: url(../images/brochure/full/sundeck-a.png);
+}
+
+#sundeck-b {
+	background-image: url(../images/brochure/full/sundeck-b.png);
+}
+
+#sundecklounge {
+	background-image: url(../images/brochure/full/sundecklounge.png);
+}
+
+#cruisingbow {
+	background-image: url(../images/brochure/512/cruisingbow.png);
+}
+
+#jacuzziempty {
+	background-image: url(../images/brochure/full/jacuzziempty.png);
+}
+
+
+/*========================================================*\
+|//////////////////// MEDIA QUERIES \\\\\\\\\\\\\\\\\\\\\\\|
+\*========================================================*/
+
+
+@media only screen and (max-width:850px) {
+	.decks-sections {
+		flex-flow: column-reverse;
+	}
+	
+	.decks-text {
+		border-top: 0.5em solid #444;
+	}
+}
+
+@media only screen and (max-width:600px) {
+	.decks-images {
+		padding: 2em;
+	}
+}
+
+@media only screen and (max-width:450px) {
+	.decks-images {
+		padding: 0;
+	}
+	
+	.image-row,
+	.image-row:last-child,
+	.full-width,
+	.half-width {
+		border-color: #444;
+	}
+}
