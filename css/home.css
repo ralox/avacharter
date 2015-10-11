@@ -232,3 +232,40 @@
 	margin: 2em 0 0.1em 0;
 	padding: 0;
 }
+
+
+/*========================================================*\
+|//////////////////// MEDIA QUERIES \\\\\\\\\\\\\\\\\\\\\\\|
+\*========================================================*/
+
+@media only screen and (max-width:850px) {
+	.home-traits {
+		top:  3em;
+		margin: auto;
+	}
+}
+
+@media only screen and (max-width:730px) {
+	.home-traits {
+		top: 6em;
+		right: auto;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		text-align: center;
+		font-size: 1em;
+	}
+	
+	.trait {
+		flex-grow: 1;
+	}
+	
+	.trait:first-child,
+	.trait:last-child {
+		font-size: inherit;
+		margin: 0;
+		color: inherit;
+	}
+}
