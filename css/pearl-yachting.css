@@ -326,3 +326,30 @@ a {
 	border-image:
 		linear-gradient(45deg, #444, #444 15%, rgba(0,0,0,0) 15%) 1;
 }
+
+
+/*========================================================*\
+|//////////////////// MEDIA QUERIES \\\\\\\\\\\\\\\\\\\\\\\|
+\*========================================================*/
+
+@media only screen and (max-width:850px) {
+	.header {
+		background-color: #fff;
+	}
+	
+	.logo {
+		position: relative;
+		font-size: 1.5em;
+	}
+
+	.logo-tagline {
+		position: relative;
+		left: 7em;
+		top: -1.3em;
+		font-size: 0.8em;
+	}
+	
+	.header:after {
+		display: none;
+	}
+}
