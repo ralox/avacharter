@@ -8,11 +8,8 @@
 <a title="Saloon" href="saloon.php">
 	<div class="nav-item">Saloon</div>
 </a>
-<a title="Master Suite" href="master-suite.php">
-	<div class="nav-item">Master Suite</div>
-</a>
-<a title="Guest Suite" href="guest-suite.php">
-	<div class="nav-item">Guest Suite</div>
+<a title="Cabins" href="cabins.php">
+	<div class="nav-item">Cabins</div>
 </a>
 <a title="Locations" href="locations.php">
 	<div class="nav-item">Locations</div>

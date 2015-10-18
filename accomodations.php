@@ -7,7 +7,7 @@
 		<?php include 'header.php' ?>
 		<main class="content">
 			<div class="section-full">
-				<div class="cover-image accomodations-full-bg"></div>
+				<div class="cover-image obscure accomodations-full-bg"></div>
 				<div class="accomodations-title bottom-left-bracket">
 					<div class="page-tagline">luxury</div>
 					<h2 class="page-title">Accomodations</h2>
@@ -28,16 +28,9 @@
 						</a>
 					</div>
 					<div class="accomodation-block zigzag">
-						<a href="master-suite.php">
+						<a href="cabins.php">
 							<div class="accomodation-block-diamond">
-								<div class="nav-item two-liner">Master Suite</div>
-							</div>
-						</a>
-					</div>
-					<div class="accomodation-block zigzag">
-						<a href="guest-suite.php">
-							<div class="accomodation-block-diamond">
-								<div class="nav-item two-liner">Guest Suite</div>
+								<div class="nav-item two-liner">Cabins</div>
 							</div>
 						</a>
 					</div>
