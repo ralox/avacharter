@@ -1,0 +1,186 @@
+/*=====================================================*\
+|//////////////////// CABINS.PHP \\\\\\\\\\\\\\\\\\\\\\\|
+\*=====================================================*/
+
+.flex-sections {
+	display: flex;
+}
+
+
+/*===============================================*\
+|//////////////////// TEXT \\\\\\\\\\\\\\\\\\\\\\\|
+\*===============================================*/
+
+.text {
+	order: 2;
+}
+
+.title {
+	position: relative;
+	top: 6em;
+	height: 7em;
+	width: 18em;
+	padding: 1em;
+	margin: auto;
+	margin-bottom: 10em;
+	text-align: center;
+	font-size: 0.5rem;
+	color: #444;
+	background: #fff;
+	border-radius: 3.5em;
+}
+
+.title:before {
+	content: "";
+	z-index: -1;
+	position: absolute;
+}
+
+.title:before {
+	left: -0.75em;
+	top: -0.75em;
+	width: 19.5em;
+	height: 8.5em;
+	background-image: linear-gradient(
+		35deg,
+		transparent 0%,
+		transparent 55%,
+		#444 55%,
+		#444 100%
+	);
+	border-radius: 4.5em;
+}
+
+.page-title {
+	font-size: 5em;
+	margin: 0;
+}
+
+.section-title {
+	margin: 0 0 -3em 3em;
+	font-size: 1.5em;
+	font-family: cursive;
+}
+
+.text {
+	min-width: 320px;
+	flex-basis: 33%;
+	text-align: justify;
+}
+
+.text p {
+	padding: 5em;
+}
+
+
+/*=================================================*\
+|//////////////////// IMAGES \\\\\\\\\\\\\\\\\\\\\\\|
+\*=================================================*/
+
+.images {
+	order: 1;
+	flex-basis: 66%;
+	background: #444;
+	padding: 5em;
+	display: flex;
+	flex-flow: column;
+}
+
+.image-row {
+	display: flex;
+	border-right: 0.5em solid #fff;
+}
+
+.image-row:last-child {
+	border-bottom: 0.5em solid #fff;
+}
+
+.image-row div {
+	flex-grow: 1;
+}
+
+.full-width,.half-width {
+	background-size: cover;
+	background-position: center;
+	border-top: 0.5em solid #fff;
+	border-left: 0.5em solid #fff;
+}
+
+.half-width {
+	width: 50%;
+}
+
+
+.full-width img {
+	width: 100%;
+}
+
+.half-width img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+img {
+	/* display is handled via the background */ 
+	opacity: 0;
+}
+
+#master-bed {
+	background-image: url(../images/brochure/full/mastersuite.png);
+}
+
+#master-bath {
+	background-image: url(../images/brochure/full/maincabinbath.png);
+}
+
+#guest-bath {
+	background-image: url(../images/brochure/full/guestcabinbath.png);
+}
+
+#twin-cabin {
+	background-image: url(../images/brochure/full/twincabin.png);
+}
+
+#queen-cabin {
+	background-image: url(../images/brochure/full/queencabin.png);
+}
+
+
+/*========================================================*\
+|//////////////////// MEDIA QUERIES \\\\\\\\\\\\\\\\\\\\\\\|
+\*========================================================*/
+
+
+@media (max-width:850px) {
+	.flex-sections {
+		flex-flow: column-reverse;
+	}
+	
+	.text {
+		flex-basis: auto;
+		border-top: 0.5em solid #444;
+	}
+	
+	.images {
+		flex-basis: auto;
+	}
+}
+
+@media (max-width:600px) {
+	.images {
+		padding: 2em;
+	}
+}
+
+@media (max-width:450px) {
+	.images {
+		padding: 0;
+	}
+	
+	.image-row,
+	.image-row:last-child,
+	.full-width,
+	.half-width {
+		border-color: #444;
+	}
+}
