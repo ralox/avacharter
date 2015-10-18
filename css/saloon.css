@@ -1,0 +1,145 @@
+/*=====================================================*\
+|//////////////////// SALOON.PHP \\\\\\\\\\\\\\\\\\\\\\\|
+\*=====================================================*/
+
+.title {
+	position: relative;
+	top: 5em;
+	height: 5em;
+	width: 15em;
+	margin: auto;
+	text-align: center;
+	font-size: 0.5rem;
+}
+
+.page-tagline {
+	position: relative;
+	top: -0.3em;
+	right: 0.4em;
+	text-align: right;
+}
+
+.content-block {
+	position: absolute;
+	width: 66%;
+	min-width: 60em;
+	height: 47.5em;
+	margin: auto;
+	display: flex;
+	background: #444;
+}
+
+.text {
+	position: absolute;
+	width: 20em;
+	top: 3em;
+	right: -3em;
+	text-align: justify;
+	background: #fff;
+}
+
+.text p {
+	padding: 5em;
+}
+
+.images {
+	font-size: 1rem;
+}
+
+.display-image {
+	position: absolute;
+	background-size: cover;
+	border: 0.5rem solid #fff;
+	overflow: hidden;
+}
+
+#saloon {
+	width: 36em;
+	height: 18em;
+	top: 3em;
+	right: 18em;
+	background-position: center bottom;
+	background-image: url(../images/brochure/full/saloon.png);
+}
+
+#dining {
+	width: 40em;
+	height: 26em;
+	top: 22em;
+	right: 14em;
+	background-position: center;
+	background-image: url(../images/brochure/full/dining.png);
+}
+
+img {
+	/* display is handled via the background */ 
+	opacity: 0;
+}
+
+/*========================================================*\
+|//////////////////// MEDIA QUERIES \\\\\\\\\\\\\\\\\\\\\\\|
+\*========================================================*/
+
+
+@media (max-width:975px) {
+	.content-block {
+		position: initial;
+		width: auto;
+		min-width: initial;
+	}
+	
+	#saloon {
+		width: 31em;
+	}
+	
+	#dining {
+		width: 35em;
+	}
+}
+
+@media (max-width:850px) {
+	.content-block {
+		flex-flow: column;
+		min-width: initial;
+		height: initial;
+		border-top: 0.5em solid #444;
+	}
+	
+	.text, .display-image, #saloon, #dining {
+		position: initial;
+		width: initial;
+	}
+	
+	.images {
+		margin: 5rem;
+		font-size: 1em;
+	}
+
+	#dining {
+		border-top: none;
+	}
+}
+
+@media (max-width:650px) {
+	.images {
+		margin: 2rem;
+	}
+}
+
+@media (max-width:560px) {
+	.images {
+		margin: 1rem;
+		font-size: 0.8em;
+	}
+}
+
+@media (max-width:475px) {
+	.images {
+		margin: 0;
+		font-size: 0.5em;
+	}
+	
+	#saloon, #dining {
+		border-color: #444;
+	}
+}

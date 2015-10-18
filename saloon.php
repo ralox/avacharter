@@ -1,28 +1,18 @@
 <html>
 	<head>
 		<?php include 'head.php' ?>
-		<link rel="stylesheet" type="text/css" href="saloon.css">
+		<link rel="stylesheet" type="text/css" href="/css/saloon.css">
 	</head>
 	<body>
 		<?php include 'header.php' ?>
 		<main class="content">
-			<h2 class="page-title">Saloon &amp; Dining</h2>
-			<div class="section">
-				<div class="section-background">
-					<div class="section-golden">
-						<div class="cover-image" data-image="images/brochure/Full/saloon.png" title="the saloon"></div>
+			<div class="content-block">
+				<div class="text">
+					<div class="title">
+						<h2 class="page-title">Saloon</h2>
+						<div class="page-tagline">&amp; dining</div>
 					</div>
-					<div class="section-horz-3rd">
-						<div class="section-vert-split">
-							<div class="cover-image" data-image="images/brochure/320/coffeetable.png" title="artful appetizers"></div>
-						</div>
-						<div class="section-vert-split">
-							<div class="cover-image" data-image="images/brochure/512/dining.png" title="dining room"></div>
-						</div>
-					</div>
-				</div>
-				<div class="cover-text cover-text-right-half">
-					<p>
+					<p class="fancy-letter">
 						Going forward through double doors, enjoy the absolutely exquisite,
 						newly refitted saloon in cherry wood. It was custom designed and built by
 						Italian craftsmen. The saloon is ideally suited for relaxing and entertaining
@@ -30,8 +20,24 @@
 						and bar. The adjoining dining room can seat up to twelve guests, with
 						adjustable table.
 					</p>
+					<div class="continue-tour">
+						<a href="cabins.php">tour the Ava's cabins</a>
+					</div>
+				</div>
+				<div class="images">
+					<div id="saloon" class="saloon-img display-image">
+						<img src="/images/brochure/full/saloon.png" title="the saloon"></img>
+					</div>
+					<div id="dining" class="display-image">
+						<img src="/images/brochure/full/dining.png" title="dining area"></img>
+					</div>
 				</div>
 			</div>
+			<!--
+			<div class="saloon-img cover-image obscure">
+				<img src="/images/brochure/full/saloon.png" alt-text="the saloon"/>
+			</div>
+			-->
 		</main>
 		<footer class="footer">
 			<?php include 'footer.php' ?>
