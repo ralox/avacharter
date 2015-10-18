@@ -6,20 +6,23 @@
 	<body>
 		<?php include 'header.php' ?>
 		<main class="content">
-			<div class="decks-sections">
-				<div class="decks-text">
-					<div class="decks-title">
+			<div class="flex-sections">
+				<div class="text">
+					<div class="title">
 						<h2 class="page-title">Decks</h2>
 					</div>
-					<p>
+					<p class="fancy-letter">
 						Starting aft, the newly designed and extended aft deck is the perfect spot
 						for al fresco dining. Stairs that run the full width of the yacht descend
 						to the sea creating a unique recreation area for lounging and sunbathing.
 						The stairs also allow easy access to swimming, water sports, and boarding
 						the tenders and wave runners.
 					</p>
+					<div class="continue-tour">
+						<a href="saloon.php">tour the Ava's saloon</a>
+					</div>
 				</div>
-				<div class="decks-images">
+				<div class="images">
 					<div class="image-row">
 						<div id="aftdeck" class="full-width">
 							<img src="images/brochure/full/aftdeck.png" title="view from the aft deck"></img>

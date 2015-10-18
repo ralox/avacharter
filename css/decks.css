@@ -2,11 +2,7 @@
 |//////////////////// DECKS.PHP \\\\\\\\\\\\\\\\\\\\\\\|
 \*====================================================*/
 
-.content {
-	margin-bottom: 0.5em;
-}
-
-.decks-sections {
+.flex-sections {
 	display: flex;
 }
 
@@ -15,11 +11,11 @@
 |//////////////////// TEXT \\\\\\\\\\\\\\\\\\\\\\\|
 \*===============================================*/
 
-.decks-text {
+.text {
 	order: 2;
 }
 
-.decks-title {
+.title {
 	position: relative;
 	top: 6em;
 	height: 5em;
@@ -31,14 +27,14 @@
 	background: #fff;
 }
 
-.decks-title:before,
-.decks-title:after {
+.title:before,
+.title:after {
 	content: "";
 	z-index: -1;
 	position: absolute;
 }
 
-.decks-title:before {
+.title:before {
 	left: -0.75em;
 	top: -0.75em;
 	width: 16.5em;
@@ -54,7 +50,7 @@
 	);
 }
 
-.decks-title:after {
+.title:after {
 	left: -3em;
 	top: 0;
 	width: 21em;
@@ -75,13 +71,13 @@
 	margin: 0;
 }
 
-.decks-text {
+.text {
 	min-width: 320px;
 	flex-basis: 33%;
 	text-align: justify;
 }
 
-.decks-text p {
+.text p {
 	padding: 5em;
 }
 
@@ -90,7 +86,7 @@
 |//////////////////// DECK IMAGES \\\\\\\\\\\\\\\\\\\\\\\|
 \*======================================================*/
 
-.decks-images {
+.images {
 	order: 1;
 	flex-basis: 66%;
 	background: #444;
@@ -168,24 +164,29 @@ img {
 \*========================================================*/
 
 
-@media only screen and (max-width:850px) {
-	.decks-sections {
+@media (max-width:850px) {
+	.flex-sections {
 		flex-flow: column-reverse;
 	}
 	
-	.decks-text {
+	.text {
+		flex-basis: auto;
 		border-top: 0.5em solid #444;
+	}
+	
+	.images {
+		flex-basis: auto;
 	}
 }
 
-@media only screen and (max-width:600px) {
-	.decks-images {
+@media (max-width:600px) {
+	.images {
 		padding: 2em;
 	}
 }
 
-@media only screen and (max-width:450px) {
-	.decks-images {
+@media (max-width:450px) {
+	.images {
 		padding: 0;
 	}
 	
