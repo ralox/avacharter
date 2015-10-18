@@ -41,9 +41,8 @@ body {
 
 main {
 	padding: 0;
-	margin: 0 auto -1em;
-	min-height: 50em;
-	overflow: hidden;
+	margin: 0 auto;
+	min-height: 47em;
 }
 
 a {
@@ -77,6 +76,8 @@ a {
 |//////////////////// PAGE HEADER \\\\\\\\\\\\\\\\\\\\\\\|
 \*======================================================*/
 .header {
+	position: relative;
+	z-index: 100;
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
@@ -137,7 +138,7 @@ a {
 	top: 0;
 	left: 0;
 	height: 0.5em;
-	width: 100vw;
+	width: 100%;
 	background: #fff;
 }
 
@@ -154,14 +155,16 @@ a {
 	padding: 2em;
 	background: #444;
 	color: #fff;
+	border-top: 0.5em solid #fff;
 }
 
 .footer [data-link-to]:hover,
-.footer a:hover {
+.footer a:hover,
+.continue-tour:hover {
 	-webkit-transition: color 300ms;
 	-moz-transition: color 300ms;
 	transition: color 300ms;
-	color: rgba(227,204,33,1);
+	color: rgba(245,195,125,1);
 }
 
 .copyright {
@@ -222,30 +225,28 @@ a {
 }
 
 
-/*=====================================================*\
-|//////////////////// PAGE TOOLS \\\\\\\\\\\\\\\\\\\\\\\|
-\*=====================================================*/
+/*================================================*\
+|//////////////////// TOOLS \\\\\\\\\\\\\\\\\\\\\\\|
+\*================================================*/
+
+/*==== Page Titles ====*/
 .page-title {
 	font-family: lane, sans-serif;
-	font-size: 5rem;
+	font-size: 5em;
+	margin: 0;
 }
 
+.page-tagline {
+	font-size: 3em;
+	font-family: serif;
+	font-style: italic; 
+}
+
+/*==== Space-Dividing Utilities ====*/
 .section {
 	position: relative;
 }
 
-/*==== Big Background Container ====*/
-.section-background {
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
-	min-width: 100%;
-	-webkit-transition: transform 1s;
-	-moz-transition: transform 1s;
-	transition: transform 1s;
-}
-
-/*==== Space-Dividing Utilities ====*/
 .section-full {
 	min-width: 100%;
 	min-height: 100%;
@@ -267,6 +268,17 @@ a {
 	height: 50vh;
 }
 
+/*==== Image-Related Stuff ====*/
+.section-background {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	min-width: 100%;
+	-webkit-transition: transform 1s;
+	-moz-transition: transform 1s;
+	transition: transform 1s;
+}
+
 .cover-image {
 	position: relative;
 	top: 0;
@@ -284,36 +296,7 @@ a {
 	background-size: cover;
 }
 
-.obscure {
-	-webkit-filter: blur(4px);
-	filter: blur(4px);
-	overflow: hidden;
-}
-
-/*================================================*\
-|//////////////////// SPECS \\\\\\\\\\\\\\\\\\\\\\\|
-\*================================================*/
-
-.specs {
-	flex-grow: 2;
-}
-
-.spec-title {
-	font-size: 2.5rem;
-	font-weight: 100;
-	margin: 0.25em 0;
-}
-
-.spec-name {
-	display: inline;
-	margin-right: 0.5em;
-	font-weight: bold;
-}
-
-/*=========================================================*\
-|//////////////////// MAGAZINE TOOLS \\\\\\\\\\\\\\\\\\\\\\\|
-\*=========================================================*/
-
+/*==== Inspired By Magazines ====*/
 .bottom-left-bracket {
 	border-width: 0.75em;
 	border-style: solid;
@@ -327,12 +310,36 @@ a {
 		linear-gradient(45deg, #444, #444 15%, rgba(0,0,0,0) 15%) 1;
 }
 
+.fancy-letter:first-letter {
+	font-size: 3em;
+	float: left;
+	margin-top: -0.1em;
+	padding-right: 0.1em;
+	font-weight: bold;
+	color: rgba(245,195,125,1);
+}
+
+.obscure {
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	filter: blur(3px);
+}
+
+/*==== Other Shared Bits and Bobs ====*/
+.continue-tour {
+	width: 100%;
+	padding: 1.5em;
+	text-align: center;
+	color: rgba(105,175,235,1);
+	margin: -3em 0 2em;
+}
+
 
 /*========================================================*\
 |//////////////////// MEDIA QUERIES \\\\\\\\\\\\\\\\\\\\\\\|
 \*========================================================*/
 
-@media only screen and (max-width:850px) {
+@media (max-width:850px) {
 	.header {
 		background-color: #fff;
 	}

@@ -11,7 +11,7 @@
 	position: absolute;
 	top: 1em;
 	right: 1em;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	text-transform: uppercase;
 	color: rgba(250,250,250,0.5);
 	letter-spacing: 4px;
@@ -26,8 +26,11 @@
 }
 
 .trait:last-child {
-	font-size: 1.2em;
+	font-size: 1.5em;
 	margin-left: 1.2em;
+	font-family: serif;
+	font-style: italic;
+	text-transform: lowercase;
 	color: rgba(250,250,250,0.7);
 }
 
@@ -233,21 +236,37 @@
 	padding: 0;
 }
 
+.specs {
+	flex-grow: 2;
+}
+
+.spec-title {
+	font-size: 2.5rem;
+	font-weight: 100;
+	margin: 0.25em 0;
+}
+
+.spec-name {
+	display: inline;
+	margin-right: 0.5em;
+	font-weight: bold;
+}
+
 
 /*========================================================*\
 |//////////////////// MEDIA QUERIES \\\\\\\\\\\\\\\\\\\\\\\|
 \*========================================================*/
 
-@media only screen and (max-width:850px) {
+@media (max-width:850px) {
 	.home-traits {
 		top:  3em;
 		margin: auto;
 	}
 }
 
-@media only screen and (max-width:730px) {
+@media (max-width:730px) {
 	.home-traits {
-		top: 6em;
+		top: 5.25em;
 		right: auto;
 		width: 100%;
 		display: flex;
@@ -267,5 +286,8 @@
 		font-size: inherit;
 		margin: 0;
 		color: inherit;
+		font-family: inherit;
+		font-style: normal;
+		text-transform: uppercase;
 	}
 }
