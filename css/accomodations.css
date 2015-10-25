@@ -4,8 +4,8 @@
 
 .accomodations-title {
 	position: absolute;
-	top: 6em;
-	right: 3em;
+	top: 10em;
+	right: 12em;
 	font-size: 0.5rem;
 	color: #fff;
 	padding: 0 0 1em 1em;
@@ -31,14 +31,16 @@
 	top: -5em;
 }
 
+.section-full {
+	border: 5em solid #444;
+	box-shadow: inset 0 0 0 0.5em #fff;
+}
+
 .content .cover-image {
 	position: absolute;
 	height: 100%;
 	width: 100%;
 	background-image: url(../images/brochure/full/sundeck.png);
-	-webkit-filter: blur(2px);
-	-moz-filter: blur(2px);
-	filter: blur(2px);
 }
 
 
@@ -48,65 +50,54 @@
 
 .accomodation-block-group {
 	position: relative;
-	top: 13em;
+	width: 50%;
+	top: 5em;
 	left: 2.5em;
 	font-size: 2rem;
 }
 
 .accomodation-block {
-	opacity: 0;
 	display: inline-block;
 	position: relative;
-	text-align: center;
-	transform: rotate(45deg);
-}
-
-.accomodation-block-diamond {
-	height: 6em;
-	width: 6em;
-	text-align: center;
-	color: #444;
-	background: rgba(255,255,255,0.8);
-	border-radius: 0.5em;
-	overflow: hidden;
-	transition: color 0.3s, background 0.3s;
-}
-
-.accomodation-block-diamond .nav-item {
-	position: relative;
-	top: 40%;
-	transform-origin: center center;
-	transform: rotate(-45deg);
-}
-
-.nav-item.two-liner {
-	top: 30%;
-	left: 5%;
-}
-
-.accomodation-block .accomodation-block-diamond:hover {
+	width: 100%;
 	color: #fff;
-	background: rgba(255,255,255,0.2);
+	text-align: left;
+	margin-bottom: 0.5em;
 }
 
-.accomodation-block.zigzag:nth-child(1) {
-	top: -3em;
-	animation: fade-in 1s ease-in-out forwards;
+.accomodation-block .nav-item {
+	border-radius: 2.5em;
+	border: 0.2em solid #fff;
+	-webkit-filter: grayscale(0.5);
+	-moz-filter: grayscale(0.5);
+	filter: grayscale(0.5);
 }
 
-.accomodation-block.zigzag:nth-child(3) {
-	top: -3em;
-	animation: fade-in 500ms 500ms ease-in-out forwards;
+.accomodation-block .nav-item:hover {
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	filter: grayscale(0);
 }
 
-.accomodation-block.zigzag:nth-child(2) {
-	animation: fade-in 750ms 250ms ease-in-out forwards;
+.nav-item {
+	width: 100%;
+	padding: 1em;
+	margin: 0;
+	background-size: cover;
+	background-position: center;
 }
 
-.accomodation-block.zigzag:nth-child(4) {
-	animation: fade-in 250ms 750ms ease-in-out forwards;
+#decks {
+	background-image: url(../images/brochure/full/aftdeck.png);
 }
 
+#saloon {
+	background-image: url(../images/brochure/820/dining.png);
+}
+
+#cabins {
+	background-image: url(../images/brochure/full/mastersuite.png);
+}
 
 /*================================================*\
 |//////////////////// SPECS \\\\\\\\\\\\\\\\\\\\\\\|
@@ -115,7 +106,7 @@
 .bottom-runner {
 	position: absolute;
 	top: 9em;
-	right: 0;
+	right: 6em;
 }
 
 .specs-accomodations {
@@ -136,18 +127,4 @@
 .list-item-value {
 	list-style: none;
 	padding-right: 0.5em;
-}
-
-
-/*=====================================================*\
-|//////////////////// ANIMATIONS \\\\\\\\\\\\\\\\\\\\\\\|
-\*=====================================================*/
-
-@keyframes fade-in {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
 }

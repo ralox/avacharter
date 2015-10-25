@@ -13,25 +13,19 @@
 					<h2 class="page-title">Accomodations</h2>
 				</div>
 				<div class="accomodation-block-group">
-					<div class="accomodation-block zigzag">
+					<div class="accomodation-block">
 						<a href="decks.php">
-							<div class="accomodation-block-diamond">
-								<div class="nav-item">Decks</div>
-							</div>
+							<div id="decks" class="nav-item">Decks</div>
 						</a>
 					</div>
-					<div class="accomodation-block zigzag">
+					<div class="accomodation-block">
 						<a href="saloon.php">
-							<div class="accomodation-block-diamond">
-								<div class="nav-item">Saloon</div>
-							</div>
+							<div id="saloon" class="nav-item">Saloon</div>
 						</a>
 					</div>
-					<div class="accomodation-block zigzag">
+					<div class="accomodation-block">
 						<a href="cabins.php">
-							<div class="accomodation-block-diamond">
-								<div class="nav-item two-liner">Cabins</div>
-							</div>
+							<div id="cabins" class="nav-item">Cabins</div>
 						</a>
 					</div>
 				</div>
