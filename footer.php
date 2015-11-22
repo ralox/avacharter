@@ -1,25 +1,25 @@
 <nav class="navigation">
-<a title="Home" href="home.php">
-	<div class="nav-item">Home</div>
-</a>
-<a title="Decks" href="decks.php">
-	<div class="nav-item">Decks</div>
-</a>
-<a title="Saloon" href="saloon.php">
-	<div class="nav-item">Saloon</div>
-</a>
-<a title="Cabins" href="cabins.php">
-	<div class="nav-item">Cabins</div>
-</a>
-<a title="Locations" href="locations.php">
-	<div class="nav-item">Locations</div>
-</a>
-<a title="Entertainment" href="services.php">
-	<div class="nav-item">Services</div>
-</a>
-<a title="Gallery" href="gallery.php">
-	<div class="nav-item">Gallery</div>
-</a>
+	<a title="Home" href="home.php">
+		<div class="nav-item">Home</div>
+	</a>
+	<a title="Decks" href="decks.php">
+		<div class="nav-item">Decks</div>
+	</a>
+	<a title="Saloon" href="saloon.php">
+		<div class="nav-item">Saloon</div>
+	</a>
+	<a title="Cabins" href="cabins.php">
+		<div class="nav-item">Cabins</div>
+	</a>
+	<a title="Locations" href="locations.php">
+		<div class="nav-item">Locations</div>
+	</a>
+	<a title="Services" href="services.php">
+		<div class="nav-item">Services</div>
+	</a>
+	<a title="Gallery" href="gallery.php">
+		<div class="nav-item">Gallery</div>
+	</a>
 </nav>
 <div class="contact hidden">
 <div class="contact-block">
@@ -33,15 +33,21 @@
 	</div>
 </div>
 <div class="contact-block">
-	<a class="phone-number" href="tel:+37797778151">
-		Tel: +377 97 77 81 51
-	</a>
-	<a class="phone-number" href="tel:+33607710873">
-		Mobile: +33607710873
-	</a>
-	<a class="email" href="mailto:jpearlman@pearl-yachting.mc">
-		jpearlman@pearl-yachting.mc
-	</a>
+	<div class="contact-link">
+		<a class="phone-number" href="tel:+37797778151">
+			Tel: +377 97 77 81 51
+		</a>
+	</div>
+	<div class="contact-link">
+		<a class="phone-number" href="tel:+33607710873">
+			Mobile: +33607710873
+		</a>
+	</div>
+	<div class="contact-link">
+		<a class="email" href="mailto:jpearlman@pearl-yachting.mc">
+			jpearlman@pearl-yachting.mc
+		</a>
+	</div>
 </div>
 </div>
 <div class="copyright">&copy; Pearl Yachting 2015</div>
