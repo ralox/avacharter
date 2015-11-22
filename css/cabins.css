@@ -18,37 +18,12 @@
 .title {
 	position: relative;
 	top: 6em;
-	height: 7em;
-	width: 18em;
+	height: 12em;
+	width: 30em;
 	padding: 1em;
 	margin: auto;
 	margin-bottom: 10em;
-	text-align: center;
 	font-size: 0.5rem;
-	color: #444;
-	background: #fff;
-	border-radius: 3.5em;
-}
-
-.title:before {
-	content: "";
-	z-index: -1;
-	position: absolute;
-}
-
-.title:before {
-	left: -0.75em;
-	top: -0.75em;
-	width: 19.5em;
-	height: 8.5em;
-	background-image: linear-gradient(
-		35deg,
-		transparent 0%,
-		transparent 55%,
-		#444 55%,
-		#444 100%
-	);
-	border-radius: 4.5em;
 }
 
 .page-title {
@@ -58,18 +33,49 @@
 
 .section-title {
 	margin: 0 0 -3em 3em;
-	font-size: 1.5em;
-	font-family: cursive;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	font-size: 1.3em;
 }
 
 .text {
 	min-width: 320px;
-	flex-basis: 33%;
+	flex-basis: 34%;
 	text-align: justify;
 }
 
-.text p {
+.air-out {
 	padding: 5em;
+}
+
+.dark-text-box {
+	margin: 0.5rem 0.5rem 0;
+}
+
+.cabin-specs {
+	font-size: 0.8em;
+	display: flex;
+	background: #666;
+	color: #ccc;
+	margin: 0 0.5rem 3em;
+}
+
+.cabin-specs .specs {
+	list-style: none;
+	padding: 1em 3em;
+	flex-grow: 1;
+}
+
+.list-item-label {
+	display: block;
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #fff;
+}
+
+.list-item-value {
+	list-style: none;
+	padding: 0;
 }
 
 
@@ -151,6 +157,12 @@ img {
 \*========================================================*/
 
 
+@media (min-width:850px) and (max-width:1120px){
+	.air-out {
+		padding: 5em 3em;
+	}
+}
+
 @media (max-width:850px) {
 	.flex-sections {
 		flex-flow: column-reverse;
@@ -159,6 +171,15 @@ img {
 	.text {
 		flex-basis: auto;
 		border-top: 0.5em solid #444;
+	}
+	
+	.dark-text-box, .cabin-specs {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	.cabin-specs .specs {
+		flex-grow: initial;
 	}
 	
 	.images {
@@ -173,6 +194,10 @@ img {
 }
 
 @media (max-width:450px) {
+	.air-out {
+		padding: 5em 2.5em;
+	}
+	
 	.images {
 		padding: 0;
 	}
