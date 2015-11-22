@@ -82,51 +82,51 @@
 			</div>
 			<div class="dark-text-box">
 				<div title="show specs" class="details-trigger details-open"></div>
-				<p>
+				<p class="fancy-letter">
 					Ava is an elegant, spacious, and luxurious yacht and an equally comfortable,
 					strong, and seaworthy vessel ideal for corporate, friends, and family charters.
 				</p>
 			</div>
 			<div class="photo-nav">
 				<div class="photo-nav-item">
-					<div class="photo-nav-text-box">
-							<div class="photo-nav-tagline">luxury accomodations</div>
-							<div class="photo-nav-title">Tour</div>
-					</div>
-					<a href="accomodations.php" class="nav" title="Yacht Tour">
+					<a href="decks.php" class="nav" title="Yacht Tour">
+						<div class="photo-nav-text-box">
+								<div class="photo-nav-tagline">luxury accomodations</div>
+								<div class="photo-nav-title">Tour</div>
+						</div>
 						<div class="port-window">
-							<div class="cover-image accomodations"></div>
+							<div class="cover-image tour"></div>
 						</div>
 					</a>
 				</div>
 				<div class="photo-nav-item">
-					<div class="photo-nav-text-box">
-							<div class="photo-nav-tagline">the beautiful côte d'azur</div>
-							<div class="photo-nav-title">Locations</div>
-					</div>
 					<a href="locations.php" class="nav" title="Locations">
+						<div class="photo-nav-text-box">
+								<div class="photo-nav-tagline">the beautiful côte d'azur</div>
+								<div class="photo-nav-title">Locations</div>
+						</div>
 						<div class="port-window">
 							<div class="cover-image locations"></div>
 						</div>
 					</a>
 				</div>
 				<div class="photo-nav-item">
-					<div class="photo-nav-text-box">
-						<div class="photo-nav-tagline">formal events & private retreats</div>
-						<div class="photo-nav-title">Services</div>
-					</div>
 					<a href="services.php" class="nav" title="services">
+						<div class="photo-nav-text-box">
+							<div class="photo-nav-tagline">formal events & private retreats</div>
+							<div class="photo-nav-title">Services</div>
+						</div>
 						<div class="port-window">
 							<div class="cover-image services"></div>
 						</div>
 					</a>
 				</div>
 				<div class="photo-nav-item">
-					<div class="photo-nav-text-box">
-						<div class="photo-nav-tagline">photos from paradise</div>
-						<div class="photo-nav-title">Gallery</div>
-					</div>
 					<a href="gallery.php" class="nav" title="Gallery">
+						<div class="photo-nav-text-box">
+							<div class="photo-nav-tagline">photos from paradise</div>
+							<div class="photo-nav-title">Gallery</div>
+						</div>
 						<div class="port-window">
 							<div class="cover-image gallery"></div>
 						</div>
