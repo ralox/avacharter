@@ -6,32 +6,22 @@
 	<body>
 		<?php include 'header.php' ?>
 		<main class="content">
-			<div class="banner flex">
-				<div class="image-row">
-					<div id="map">
-						<img src="images/locations/cotedazur.jpg" height="200px" title="Monaco on a map"></img>
-					</div>
+			<div class="banner">
+				<div class="cover-image banner-image"></div>
+				<div class="title">
+					<div class="page-tagline">the beautiful côte d'azur</div>
+					<h2 class="page-title">Locations</h2>
 				</div>
-				<div class="text intro">
-					<div class="title">
-						<div class="page-tagline">the beautiful côte d'azur</div>
-						<h2 class="page-title">Locations</h2>
-					</div>
-					<p class="fancy-letter">
-						Ava has the best berthing locations in the ports of Monaco, Cannes, Nice, and St Tropez.
-					</p>
-				</div>	
 			</div>
-			<div class="location-port-windows">
-				<div class="port-window thumbnail-"></div>
-				<div class="port-window thumbnail-"></div>
-				<div class="port-window thumbnail-"></div>
-				<div class="port-window thumbnail-"></div>
+			<div class="dark-text-box">
+				<p class="fancy-letter">
+					Ava has the best berthing locations in the ports of Monaco, Cannes, Nice, and St Tropez.
+				</p>
 			</div>
 			<div class="images">
 				<div class="image-row">
 					<div id="monaco" class="full-width">
-						<img src="images/locations/montecarlo-grandprix.jpg" title="Port Hercule setup for the Monaco Grand Prix"></img>
+						<img src="images/locations/montecarlo-grandprix.png" title="Port Hercule setup for the Monaco Grand Prix"></img>
 					</div>
 				</div>
 			</div>
@@ -62,15 +52,15 @@
 			<div class="images wedge">
 				<div class="image-row">
 					<div id="nice" class="half-width">
-						<img src="images/locations/nice-sky.jpg" title="aerial view of Nice"></img>
+						<img src="images/locations/nice-sky.png" title="aerial view of Nice"></img>
 					</div>
 					<div id="sttropez" class="half-width">
-						<img src="images/locations/sttropez-beach.jpg" title="beach near St. Tropez"></img>
+						<img src="images/locations/sttropez-beach.png" title="beach near St. Tropez"></img>
 					</div>
 				</div>
 				<div class="image-row">
 					<div id="cannes" class="full-width">
-						<img src="images/locations/cannes-fireworks.jpg" title="fireworks over Cannes"></img>
+						<img src="images/locations/cannes-fireworks.png" title="fireworks over Cannes"></img>
 					</div>
 				</div>
 			</div>

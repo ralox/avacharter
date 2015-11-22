@@ -6,26 +6,46 @@
 	display: flex;
 }
 
-/*===============================================*\
-|//////////////////// TEXT \\\\\\\\\\\\\\\\\\\\\\\|
-\*===============================================*/
+
+/*=======================================================*\
+|//////////////////// TITLE BANNER \\\\\\\\\\\\\\\\\\\\\\\|
+\*=======================================================*/
+
+.banner {
+	position: relative;
+	width: 100%;
+	height: 14em;
+}
+
+.banner-image {
+	background-image: url(../images/brochure/512/sttropez.png);
+	-webkit-filter: blur(1px) brightness(0.9);
+	-moz-filter: blur(1px) brightness(0.9);
+	filter: blur(1px) brightness(0.9);
+}
 
 .title {
-	position: relative;
-	margin-top: 3em;
+	position: absolute;
+	top: 3em;
+	right: 5em;
 	height: 4em;
-	width: 100%;
 	padding: 1em;
-	padding-right: 6.5em;
 	text-align: right;
 	font-size: 0.5rem;
-	color: #444;
+	color: #fff;
 }
 
 .page-title {
-	font-size: 5em;
+	font-size: 10em;
 	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 3px;
 }
+
+
+/*===============================================*\
+|//////////////////// TEXT \\\\\\\\\\\\\\\\\\\\\\\|
+\*===============================================*/
 
 .section-title {
 	margin: 0 0 -3em 3em;
@@ -48,16 +68,6 @@
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	font-size: 1.3em;
-}
-
-.intro {
-	flex-basis: 33%;
-}
-
-.intro p {
-	font-size: 1.3em;
-	padding: 3em;
-	padding-bottom: 1em;
 }
 
 .location-text {
@@ -93,10 +103,6 @@
 	border-right: 0.5em solid #fff;
 }
 
-.banner .image-row {
-	flex-basis: 66%;
-}
-
 .image-row:last-child {
 	border-bottom: 0.5em solid #fff;
 }
@@ -105,7 +111,7 @@
 	flex-grow: 1;
 }
 
-.full-width,.half-width,#map {
+.full-width,.half-width {
 	background-size: cover;
 	background-position: center;
 	border-top: 0.5em solid #fff;
@@ -131,37 +137,20 @@ img {
 	opacity: 0;
 }
 
-#map {
-	position: relative;
-	overflow: hidden;
-	background-image: url(../images/locations/cotedazur.jpg);
-}
-
-#map:after {
-	content: "";
-	height: 6em;
-	width: 6em;
-	position: absolute;
-	right: -3em;
-	bottom: -3em;
-	background: #fff;
-	transform: rotate(45deg);
-}
-
 #monaco {
-	background-image: url(../images/locations/montecarlo-grandprix.jpg);
+	background-image: url(../images/locations/montecarlo-grandprix.png);
 }
 
 #nice {
-	background-image: url(../images/locations/nice-sky.jpg);
+	background-image: url(../images/locations/nice-sky.png);
 }
 
 #sttropez {
-	background-image: url(../images/locations/sttropez-beach.jpg);
+	background-image: url(../images/locations/sttropez-beach.png);
 }
 
 #cannes {
-	background-image: url(../images/locations/cannes-fireworks.jpg);
+	background-image: url(../images/locations/cannes-fireworks.png);
 }
 
 
@@ -177,17 +166,44 @@ img {
 	
 	.text {
 		flex-basis: auto;
-		border-top: 0.5em solid #444;
 	}
 	
 	.images {
 		flex-basis: auto;
 	}
+	
+	.text.flex {
+		flex-direction: column;
+	}
+	
+	.location-text {
+		flex-basis: initial;
+	}
 }
 
 @media (max-width:600px) {
-	.images {
-		padding: 2em;
+	
+	.intro p {
+		font-size: 1em;
+	}
+	
+	.title-banner {
+		border-top: 0.5em solid #444;
+		display: block !important;
+	}
+}
+
+@media (max-width:570px) {
+	.title {
+		position: relative;
+		top: -21em;
+		right: initial;
+		margin: auto;
+		text-align: center;
+	}
+	
+	.page-title {
+		font-size: 6em;
 	}
 }
 
@@ -201,5 +217,13 @@ img {
 	.full-width,
 	.half-width {
 		border-color: #444;
+	}
+	
+	.wedge:before {
+		width: 3.8em;
+		height: 3.8em;
+		border-right: 0.5em solid;
+		border-bottom: 0.5em solid;
+		border-radius: 0.5em;
 	}
 }
