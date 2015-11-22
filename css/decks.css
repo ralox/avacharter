@@ -164,6 +164,12 @@ img {
 \*========================================================*/
 
 
+@media (max-width:1190px) {
+	.text p {
+		padding: 5em 2.5em;
+	}
+}
+
 @media (max-width:850px) {
 	.flex-sections {
 		flex-flow: column-reverse;
