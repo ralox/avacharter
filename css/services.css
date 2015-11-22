@@ -2,8 +2,17 @@
 |//////////////////// SERVICES.PHP \\\\\\\\\\\\\\\\\\\\\\\|
 \*=======================================================*/
 
-.flex-sections {
+.flex {
 	display: flex;
+}
+
+.columns {
+	-moz-column-count: 3;
+	-moz-column-gap: 5em;
+	-webkit-column-count: 3;
+	-webkit-column-gap: 5em;
+	column-count: 3;
+	column-gap: 5em;
 }
 
 
@@ -11,49 +20,45 @@
 |//////////////////// TEXT \\\\\\\\\\\\\\\\\\\\\\\|
 \*===============================================*/
 
+.banner {
+	position: relative;
+}
+
 .text {
-	order: 2;
+	margin: 2.5em;
+	min-width: 320px;
+}
+
+.text p {
+	text-align: justify;
+}
+
+.text p:nth-child(1) {
+	margin-top: -0.25em;
 }
 
 .title {
-	position: relative;
+	position: absolute;
 	top: 6em;
+	right: 12em;
 	height: 7em;
-	width: 18em;
+	width: auto;
 	padding: 1em;
 	margin: auto;
 	margin-bottom: 10em;
 	text-align: center;
 	font-size: 0.5rem;
-	color: #444;
-	background: #fff;
-	border-radius: 3.5em;
-}
-
-.title:before {
-	content: "";
-	z-index: -1;
-	position: absolute;
-}
-
-.title:before {
-	left: -0.75em;
-	top: -0.75em;
-	width: 19.5em;
-	height: 8.5em;
-	background-image: linear-gradient(
-		35deg,
-		transparent 0%,
-		transparent 55%,
-		#444 55%,
-		#444 100%
-	);
-	border-radius: 4.5em;
+	color: #fff;
+	background: rgba(0,0,0,0.4);
+	box-shadow: 0 0 6em 2em rgba(0,0,0,0.4);
 }
 
 .page-title {
-	font-size: 5em;
+	font-size: 10em;
 	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-align: right;
 }
 
 .section-title {
@@ -62,14 +67,24 @@
 	font-family: cursive;
 }
 
-.text {
-	min-width: 320px;
-	flex-basis: 33%;
-	text-align: justify;
+.list-title {
+	font-size: 2em;
+	font-weight: 100;
+	margin: 0 0 0.5em;
+	color: #fff;
 }
 
-.text p {
-	padding: 5em;
+.watersports-list {
+	padding: 2em;
+}
+
+.watersports-list ul {
+	list-style: none;
+	padding: 0;
+}
+
+.watersports-list li {
+	font-size: 1.1em;
 }
 
 
@@ -77,11 +92,31 @@
 |//////////////////// IMAGES \\\\\\\\\\\\\\\\\\\\\\\|
 \*=================================================*/
 
+.banner .cover-image {
+	background-image: url(../images/brochure/320/event-a.png);
+	height: 14em;
+	min-height: initial;
+	-webkit-filter: blur(1px) brightness(0.9);
+	-moz-filter: blur(1px) brightness(0.9);
+	filter: blur(1px) brightness(0.9);
+}
+
+.collage {
+	flex-basis: 66%;
+}
+
+.watersports {
+	flex-basis: 34%;
+	background-image: url(../images/brochure/full/waverunner.png);
+	background-size: cover;
+	background-position: center;
+	border: 0.5em solid #fff;
+	border-left: none;
+}
+
 .images {
 	order: 1;
 	flex-basis: 66%;
-	background: #444;
-	padding: 5em;
 	display: flex;
 	flex-flow: column;
 }
@@ -125,24 +160,17 @@ img {
 	opacity: 0;
 }
 
-#master-bed {
-	background-image: url(../images/brochure/full/mastersuite.png);
+#chef {
+	background-image: url(../images/brochure/full/chef.png);
+	max-height: 52em;
 }
 
-#master-bath {
-	background-image: url(../images/brochure/full/maincabinbath.png);
+#raft {
+	background-image: url(../images/brochure/820/toystube.png);
 }
 
-#guest-bath {
-	background-image: url(../images/brochure/full/guestcabinbath.png);
-}
-
-#twin-cabin {
-	background-image: url(../images/brochure/full/twincabin.png);
-}
-
-#queen-cabin {
-	background-image: url(../images/brochure/full/queencabin.png);
+#lit-up {
+	background-image: url(../images/brochure/820/event-b.png);
 }
 
 
@@ -150,29 +178,72 @@ img {
 |//////////////////// MEDIA QUERIES \\\\\\\\\\\\\\\\\\\\\\\|
 \*========================================================*/
 
+@media (max-width:1140px) {
+	.service-features .flex {
+		flex-direction: column;
+	}
+	
+	.collage {
+		flex-basis: initial;
+	}
+	
+	.watersports {
+		order: 2;
+		flex-basis: 100%;
+		border-top: none;
+		border-left: 0.5em solid #fff;
+	}
+	
+	.list-title {
+		color: #444;
+	}
+	
+	.watersports-list {
+		color: #fff;
+		font-size: 1.2em;
+	}
+}
 
 @media (max-width:850px) {
+	.columns {
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+	}
+	
 	.flex-sections {
 		flex-flow: column-reverse;
 	}
-	
-	.text {
-		flex-basis: auto;
-		border-top: 0.5em solid #444;
-	}
-	
-	.images {
-		flex-basis: auto;
+}
+
+@media (max-width:650px) {
+	.columns {
+		-moz-column-count: 1;
+		-webkit-column-count: 1;
+		column-count: 1;
 	}
 }
 
-@media (max-width:600px) {
-	.images {
-		padding: 2em;
+@media (max-width:570px) {
+	.banner {
+		margin-top: -4em;	
+	}
+	
+	.title {
+		position: relative;
+		top: 14em;
+		right: initial;
+		margin: auto;
+		text-align: center;
+	}
+	
+	.page-title {
+		text-align: center;
+		font-size: 6em;
 	}
 }
 
-@media (max-width:450px) {
+@media (max-width:450px) {	
 	.images {
 		padding: 0;
 	}
@@ -180,7 +251,8 @@ img {
 	.image-row,
 	.image-row:last-child,
 	.full-width,
-	.half-width {
+	.half-width,
+	.watersports {
 		border-color: #444;
 	}
 }

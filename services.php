@@ -6,16 +6,23 @@
 	<body>
 		<?php include 'header.php' ?>
 		<main class="content">
-			<div class="title">
-				<h2 class="page-title">Services</h2>
+			<div class="banner">
+				<div class="title">
+					<div class="page-tagline">formal events & private retreats</div>
+					<h2 class="page-title">Services</h2>
+				</div>
+				<div class="cover-image"></div>
 			</div>
-			<div class="text">
-				<P class="fancy-letter">
+			<div class="dark-text-box">
+				<p class="fancy-letter">
+					Able to entertain 49 guests at sea and as many as 130 in port, the Ava is unique for corporate, conference, event, and personal entertaining.
+				</p>
+			</div>
+			<div class="text columns">
+				<P>
 					Ava's excellent entertaining areas, unique conference features, and the
 					captain's flexibility, effort, and experience will make your corporate and
-					event charters enjoyable and successful.  Able to entertain 49 guests at sea
-					and as many as 130 in port, the Ava is unique for corporate, conference, event,
-					and personal entertaining. Using a combination of the yacht and tents adjoining
+					event charters enjoyable and successful. Using a combination of the yacht and tents adjoining
 					quayside in the Monaco Old Port, Ava allows flexibility for an unlimited number
 					of guests for cocktails and sit-down catering.
 				</P>
@@ -35,17 +42,41 @@
 					magicians, etc...
 				</p>
 			</div>
-			<div>
-				<ul class="watersports">
-					<h4 class="list-title">Water Sports</h4>
-					<li>21' Novurania semi rigid speedboat with 115hp 4 stroke Yamaha outboard engine</li>
-					<li>14' inflatable</li>
-					<li>2 x Yamaha 800cc waverunners</li>
-					<li>Waterskis</li>
-					<li>Biscuits</li>
-					<li>Snorkelling Gear</li>
-					<li>Fishing Equipment</li>
-				</ul>
+			<div class="service-features">
+				<div class="glasses"></div>
+				<div class="flex">
+					<div class="collage">
+						<div class="images">
+							<div class="image-row">
+								<div id="chef" class="full-width">
+									<img src="images/brochure/full/chef.png" title="the chef presents a meal on the deck"></img>
+								</div>
+							</div>
+							<div class="image-row">
+								<div id="raft" class="half-width">
+									<img src="images/brochure/820/toystube.png" title="fun on the water"></img>
+								</div>
+								<div id="lit-up" class="half-width">
+									<img src="images/brochure/820/event-b.png" title="the Ava lit up at night"></img>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="watersports">
+						<div class="watersports-list">
+							<ul>
+								<h4 class="list-title">Water Sports</h4>
+								<li>21' Novurania semi rigid speedboat with 115hp 4 stroke Yamaha outboard engine</li>
+								<li>14' inflatable</li>
+								<li>2 x Yamaha 800cc waverunners</li>
+								<li>Waterskis</li>
+								<li>Biscuits</li>
+								<li>Snorkelling Gear</li>
+								<li>Fishing Equipment</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 		</main>
 		<footer class="footer">
