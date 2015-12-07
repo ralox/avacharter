@@ -25,7 +25,7 @@
 
 .content-block {
 	position: relative;
-	width: 80%;
+	width: 60em;
 	height: 47.5em;
 	margin: auto;
 	display: flex;
@@ -34,7 +34,7 @@
 
 .text {
 	position: absolute;
-	width: 20em;
+	width: 23em;
 	top: 3em;
 	right: 0;
 	text-align: justify;
@@ -64,7 +64,7 @@
 	width: 36em;
 	height: 18em;
 	top: 3em;
-	right: 21em;
+	right: 24em;
 	background-position: center bottom;
 	background-image: url(../images/brochure/full/saloon.png);
 }
@@ -73,7 +73,7 @@
 	width: 40em;
 	height: 26em;
 	top: 22em;
-	right: 17em;
+	right: 20em;
 	background-position: center;
 	background-image: url(../images/brochure/full/dining.png);
 }
@@ -90,7 +90,7 @@ img {
 
 @media (max-width:1115px) {
 	.content-block {
-		width: auto;
+		width: 53em;
 	}
 	
 	#saloon {
@@ -102,10 +102,26 @@ img {
 	}
 }
 
+@media (max-width: 990px) {
+	.content-block {
+		width: 49em;
+	}
+	
+	#saloon {
+		width: 24em;
+	}
+	
+	#dining {
+		width: 28em;
+	}
+}
+
+
 @media (max-width:850px) {
 	.content-block {
+		-webkit-flex-flow: column;
 		flex-flow: column;
-		min-width: initial;
+		width: 100%;
 		height: initial;
 		border-top: 0.5em solid #444;
 	}

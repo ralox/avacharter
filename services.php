@@ -43,7 +43,6 @@
 				</p>
 			</div>
 			<div class="service-features">
-				<div class="glasses"></div>
 				<div class="flex">
 					<div class="collage">
 						<div class="images">

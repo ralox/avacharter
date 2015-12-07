@@ -2,6 +2,14 @@
 |//////////////////// GALLERY.PHP \\\\\\\\\\\\\\\\\\\\\\\|
 \*=======================================================*/
 
+.images,
+.image-row,
+.overlay-action-bar {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+}
+
 .content {
 	background: #444;
 }
@@ -44,16 +52,17 @@
 	order: 1;
 	background: #fff;
 	padding: 5em;
-	display: flex;
+	-webkit-flex-flow: column;
 	flex-flow: column;
 }
 
 .image-row {
-	display: flex;
+	-webkit-justify-content: space-around;
 	justify-content: space-around;
 }
 
 .thumbnail-overview .image-row {
+	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
 }
 
@@ -104,7 +113,7 @@
 }
 
 .overlay-action-bar {
-	display: flex;
+	-webkit-justify-content: space-between;
 	justify-content: space-between;
 	width: 100%;
 	background: #444;

@@ -91,9 +91,6 @@ p {
 .header {
 	position: relative;
 	z-index: 100;
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
 	justify-content: space-between;
 	font-size: 1rem;
 }
@@ -156,15 +153,20 @@ p {
 	background: #fff;
 }
 
+.footer,
+.navigation,
+.section-background,
+.header {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+}
 
 /*======================================================*\
 |//////////////////// PAGE FOOTER \\\\\\\\\\\\\\\\\\\\\\\|
 \*======================================================*/
 .footer {
 	position: relative;
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
 	justify-content: space-between;
 	padding: 2em;
 	background: #444;
@@ -208,9 +210,7 @@ p {
 /*==== Navigation ====*/
 .navigation {
 	padding: 0.25em;
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
+	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
 	font-family: lane, sans-serif;
 }
@@ -266,10 +266,8 @@ p {
 
 /*==== Image-Related Stuff ====*/
 .section-background {
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
 	min-width: 100%;
+	height: 100%;
 	-webkit-transition: transform 1s;
 	-moz-transition: transform 1s;
 	transition: transform 1s;
@@ -309,11 +307,17 @@ p {
 .fancy-letter:first-letter {
 	font-size: 3em;
 	float: left;
-	margin-top: -0.4em;
-	margin-bottom: -0.5em;
+	margin-top: -0.6em;
+	margin-bottom: -0.7em;
 	padding-right: 0.1em;
 	font-weight: bold;
 	color: rgba(245,195,125,1);
+}
+
+@supports (-moz-transform: translate(0, 0)) {
+	.fancy-letter:first-letter {
+		margin-top: 0;
+	}
 }
 
 .obscure {
