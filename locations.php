@@ -9,7 +9,7 @@
 			<div class="banner">
 				<div class="cover-image banner-image"></div>
 				<div class="title">
-					<div class="page-tagline">the beautiful côte d'azur</div>
+					<div class="page-tagline">the beautiful c&ocirc;te d'azur</div>
 					<h2 class="page-title">Locations</h2>
 				</div>
 			</div>

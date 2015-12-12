@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<?php include 'head.php' ?>
-		<link rel="stylesheet" type="text/css" href="/css/saloon.css">
+		<link rel="stylesheet" type="text/css" href="css/saloon.css">
 	</head>
 	<body>
 		<?php include 'header.php' ?>

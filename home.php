@@ -102,7 +102,7 @@
 				<div class="photo-nav-item">
 					<a href="locations.php" class="nav" title="Locations">
 						<div class="photo-nav-text-box">
-								<div class="photo-nav-tagline">the beautiful côte d'azur</div>
+								<div class="photo-nav-tagline">the beautiful c&ocirc;te d'azur</div>
 								<div class="photo-nav-title">Locations</div>
 						</div>
 						<div class="port-window">
