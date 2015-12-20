@@ -1,10 +1,27 @@
+/* Function Definitions */
+function closeOverlay(e) {
+	$(e.target).closest('.overlay').addClass('hidden');
+}
+
+function setupRequestForm(){
+	$('.close').on('click', function(e){
+		closeOverlay(e)
+	});
+};
+
+
+/* Immediate Execution */
 ;(function () {
 	if (window.location.host.indexOf('pearl') >= 0){
 	    $('.contact').removeClass('hidden');
 	    $('.logo-tagline').text('Pearl Yachting Monaco');
+		$('.request-dialog-overlay').load('request-form.php', function(){
+			setupRequestForm();
+		});
 	}
 }());
 
+/* Execute when page is ready */
 $(document).ready(function(){
 	
 	$('.details-trigger').on('click', function(){
@@ -23,19 +40,24 @@ $(document).ready(function(){
 		$('.gallery-overlay').removeClass('hidden');
 	});
 	
-	$('#close').on('click',function(){
-		$('.gallery-overlay').addClass('hidden');
+	$('.close').on('click',function(e){
+		closeOverlay(e);
 	});
 	
-	$('#next').on('click',function(){
+	$('.next').on('click',function(){
 		var current = $('#full-photo').attr('data-order');
 		var target = parseInt(current) + 1;
 		$('div[data-order="' + target + '"]').click();
 	});
 	
-	$('#previous').on('click',function(){
+	$('.previous').on('click',function(){
 		var current = $('#full-photo').attr('data-order');
 		var target = parseInt(current) - 1;
 		$('div[data-order="' + target + '"]').click();
+	});
+	
+	$('.request').on('click',function(){
+		$('.request-dialog-overlay').removeClass('hidden');
+		
 	});
 });

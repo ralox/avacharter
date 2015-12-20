@@ -10,12 +10,12 @@
 				<div class="page-tagline">photos from paradise</div>
 				<h2 class="page-title">Gallery</h2>
 			</div>
-			<div class="gallery-overlay hidden">
+			<div class="overlay gallery-overlay hidden">
 				<div class="overlay-frame">
 					<div class="overlay-action-bar">
-						<button id="previous" class="overlay-action">previous</button>
-						<button id="close" class="overlay-action">close</button>
-						<button id="next" class="overlay-action">next</button>
+						<button class="previous overlay-action">previous</button>
+						<button class="close overlay-action">close</button>
+						<button class="next overlay-action">next</button>
 					</div>
 					<div id="full-photo"></div>
 				</div>

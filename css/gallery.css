@@ -3,8 +3,7 @@
 \*=======================================================*/
 
 .images,
-.image-row,
-.overlay-action-bar {
+.image-row {
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
@@ -84,15 +83,6 @@
 	height: 100%;
 }
 
-.overlay-cover {
-	position: fixed;
-	top: 0;
-	left: 0;
-	background: rgba(0,0,0,0.7);
-	width: 100%;
-	height: 100%;
-}
-
 .overlay-frame {
 	position: relative;
 	z-index: 101;
@@ -110,33 +100,6 @@
 #full-photo img {
 	width: 100%;
 	height: auto;
-}
-
-.overlay-action-bar {
-	-webkit-justify-content: space-between;
-	justify-content: space-between;
-	width: 100%;
-	background: #444;
-	padding: 1em 1em 0;
-}
-
-.overlay-action {
-	font-size: 1em;
-	width: 10em;
-	height: 2.5em;
-	color: #444;
-	background-color: #fff;
-	background-image: linear-gradient(#fff 80%,#ccc 100%);
-	border: none;
-}
-
-.overlay-action:hover {
-	cursor: pointer;
-	-webkit-transition: background-color 300ms;
-	-moz-transition: background-color 300ms;
-	transition: background-color 300ms;
-	background-color: rgba(245,195,125,1);
-	background-image: none;
 }
 
 
