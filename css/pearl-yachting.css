@@ -207,6 +207,32 @@ p {
 	margin: 0.5em 0;
 }
 
+/*==== Charter Request ====*/
+.request-box {
+	position: absolute;
+	left: 0;
+	top: -2em;
+	width: 100%;
+}
+
+.request {
+	display: block;
+	font-size: 1.1em;
+	height: 3em;
+	width: 10em;
+	margin: 0 auto;
+	
+	background: rgba(245,195,125,1);
+	border: none;
+	border-radius: 0.2em;
+}
+
+.request:hover {
+	cursor: pointer;
+	background: rgba(250, 210, 140,1);
+	box-shadow: 0 0 1.5em 0 rgba(250, 220, 200,0.4);
+}
+
 /*==== Navigation ====*/
 .navigation {
 	padding: 0.25em;

@@ -22,33 +22,38 @@
 	</a>
 </nav>
 <div class="contact hidden">
-<div class="contact-block">
-	<div class="name">
-		Captain Jeffrey Pearlman
+	<div class="request-box">
+		<button class="request">
+			Request a Charter
+		</button>
 	</div>
-	<div class="address">
-		Quai Jean Charles Rey Jetee Sud<br/>
-		Port de Fontvieille<br/>
-		MC 98000 Monaco
+	<div class="contact-block">
+		<div class="name">
+			Captain Jeffrey Pearlman
+		</div>
+		<div class="address">
+			Quai Jean Charles Rey Jetee Sud<br/>
+			Port de Fontvieille<br/>
+			MC 98000 Monaco
+		</div>
 	</div>
-</div>
-<div class="contact-block">
-	<div class="contact-link">
-		<a class="phone-number" href="tel:+37797778151">
-			Tel: +377 97 77 81 51
-		</a>
+	<div class="contact-block">
+		<div class="contact-link">
+			<a class="phone-number" href="tel:+37797778151">
+				Tel: +377 97 77 81 51
+			</a>
+		</div>
+		<div class="contact-link">
+			<a class="phone-number" href="tel:+33607710873">
+				Mobile: +33607710873
+			</a>
+		</div>
+		<div class="contact-link">
+			<a class="email" href="mailto:jpearlman@pearl-yachting.mc">
+				jpearlman@pearl-yachting.mc
+			</a>
+		</div>
 	</div>
-	<div class="contact-link">
-		<a class="phone-number" href="tel:+33607710873">
-			Mobile: +33607710873
-		</a>
-	</div>
-	<div class="contact-link">
-		<a class="email" href="mailto:jpearlman@pearl-yachting.mc">
-			jpearlman@pearl-yachting.mc
-		</a>
-	</div>
-</div>
 </div>
 <div class="copyright">&copy; Pearl Yachting 2015</div>
 
