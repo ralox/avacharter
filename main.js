@@ -13,8 +13,8 @@ function setupRequestForm(){
 /* Immediate Execution */
 ;(function () {
 	if (window.location.host.indexOf('pearl') >= 0){
-	    $('.contact').removeClass('hidden');
-	    $('.logo-tagline').text('Pearl Yachting Monaco');
+		$('.contact').removeClass('hidden');
+		$('.logo-tagline').text('Pearl Yachting Monaco');
 		$('.request-dialog-overlay').load('request-form.php', function(){
 			setupRequestForm();
 		});
@@ -58,6 +58,20 @@ $(document).ready(function(){
 	
 	$('.request').on('click',function(){
 		$('.request-dialog-overlay').removeClass('hidden');
-		
+		//set today as min date
+		var today = new Date();
+		var year = today.getFullYear(),
+			month = ("0" + (today.getMonth() + 1)).slice(-2),
+			day = ("0" + (today.getDate() + 1)).slice(-2);
+		$('#start-date')
+			.attr('min',year + '-' + month + '-' + day)
+			.on('change',function(){
+				var startDate = new Date($(this).val()),
+					startYear = startDate.getFullYear(),
+					startMonth = ("0" + (startDate.getMonth() + 1)).slice(-2),
+					startDay = ("0" + (startDate.getDate() + 1)).slice(-2);			
+				$('#end-date').attr('min',startYear + '-' + startMonth + '-' + startDay);
+			})
+		;
 	});
 });
