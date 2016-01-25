@@ -114,9 +114,8 @@ p {
 	z-index: 1;
 	position: absolute;
 	top: 0.5em;
-	left: 0.5em;
 	font-size: 2em;
-	margin: 0.3em 0 0 0.4em;
+	margin: 0.3em 0 0 0.9em;
 }
 
 .logo-text {
@@ -155,12 +154,12 @@ p {
 
 .footer,
 .navigation,
-.section-background,
-.header {
+.section-background {
 	display: -webkit-flex;
 	display: -ms-flex;
 	display: flex;
 }
+
 
 /*======================================================*\
 |//////////////////// PAGE FOOTER \\\\\\\\\\\\\\\\\\\\\\\|
@@ -207,32 +206,6 @@ p {
 	margin: 0.5em 0;
 }
 
-/*==== Charter Request ====*/
-.request-box {
-	position: absolute;
-	left: 0;
-	top: -2em;
-	width: 100%;
-}
-
-.request {
-	display: block;
-	font-size: 1.1em;
-	height: 3em;
-	width: 10em;
-	margin: 0 auto;
-	
-	background: rgba(245,195,125,1);
-	border: none;
-	border-radius: 0.2em;
-}
-
-.request:hover {
-	cursor: pointer;
-	background: rgba(250, 210, 140,1);
-	box-shadow: 0 0 1.5em 0 rgba(250, 220, 200,0.4);
-}
-
 /*==== Navigation ====*/
 .navigation {
 	padding: 0.25em;
@@ -247,35 +220,6 @@ p {
 	padding: 0 1em 1em;
 }
 
-
-/*=======================================================*\
-|//////////////////// Request Form \\\\\\\\\\\\\\\\\\\\\\\|
-\*=======================================================*/
-
-.request-dialog-overlay {
-	z-index: 101;
-}
-
-.request-dialog {
-	position: relative;
-	z-index: 102;
-	width: 30em;
-	height: auto;
-	max-width: 100%;
-	margin: 5em auto;
-}
-
-.request-dialog-content {
-	color: #333;
-	background: #fff;
-	padding: 1em;
-	border-bottom-right-radius: 0.2em;
-	border-bottom-left-radius: 0.2em;
-}
-
-.request-form {
-	
-}
 
 
 /*=========================================================*\
@@ -328,6 +272,110 @@ p {
 	background-image: none;
 }
 
+
+/*=======================================================*\
+|//////////////////// Request Form \\\\\\\\\\\\\\\\\\\\\\\|
+\*=======================================================*/
+
+.request-dialog-overlay {
+	position: absolute;
+	z-index: 101;
+	width: 100%;
+}
+
+.request-dialog {
+	position: relative;
+	z-index: 102;
+	max-width: 40em;
+	min-width: 30em;
+	margin: 3em auto;
+}
+
+.request-dialog-content {
+	color: #333;
+	background: #fff;
+	padding: 1em 3em;
+	border-bottom-right-radius: 0.2em;
+	border-bottom-left-radius: 0.2em;
+}
+
+.request-box {
+	position: absolute;
+	left: 0;
+	top: -2em;
+	width: 100%;
+}
+
+.request-dialog-title h2 {
+	font-size: 2em;
+	color: #999;
+	margin: 0.5em 0;
+}
+
+.form-input {
+	font-size: 1.1em;
+	margin: 0 2em 0.5em;
+}
+
+.form-input input,
+.form-input textarea {
+	font: inherit;
+	font-size: inherit;
+	line-height: 1.3;
+	width: 15em;
+}
+
+.form-input label {
+	width: 3em;
+	display: inline-block;
+}
+
+.form-question {
+	font-size: 1.3em;
+	margin-bottom: 1em;
+}
+
+.contact-input {
+	margin-top: 2em;
+}
+
+#send-request {
+	margin-top: 4em;
+}
+
+#description {
+	width: 100%;
+	height: 10em;
+	resize: vertical;
+}
+
+.dates input {
+	width: 10em;
+}
+
+.to {
+	width: 3.3em;
+	text-align: center;
+	display: inline-block;
+}
+
+.primary-button {
+	display: block;
+	font-size: 1.1em;
+	height: 3em;
+	width: 10em;
+	margin: 0 auto;
+	
+	background: rgba(245,195,125,1);
+	border: none;
+	border-radius: 0.2em;
+}
+
+.primary-button:hover {
+	cursor: pointer;
+	background: rgba(250, 210, 140,1);
+	box-shadow: 0 0 1.5em 0 rgba(250, 220, 200,0.4);
+}
 
 
 /*================================================*\
@@ -472,6 +520,7 @@ p {
 		left: 7em;
 		top: -1.3em;
 		font-size: 0.8em;
+		width: 15em;
 	}
 	
 	.header:after {

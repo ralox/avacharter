@@ -6,4 +6,5 @@
 		</hgroup>
 	</a>
 	<div class="white-bar"></div>
+	<div class="request-dialog-overlay overlay hidden"></div>
 </header>

@@ -23,7 +23,7 @@
 </nav>
 <div class="contact hidden">
 	<div class="request-box">
-		<button class="request">
+		<button class="request primary-button">
 			Request a Charter
 		</button>
 	</div>
@@ -55,7 +55,6 @@
 		</div>
 	</div>
 </div>
-<div class="overlay request-dialog-overlay hidden"></div>
 <div class="copyright">&copy; Pearl Yachting 2015</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

@@ -57,8 +57,8 @@ $(document).ready(function(){
 	});
 	
 	$('.request').on('click',function(){
+		window.scroll(0,0);
 		$('.request-dialog-overlay').removeClass('hidden');
-		//set today as min date
 		var today = new Date();
 		var year = today.getFullYear(),
 			month = ("0" + (today.getMonth() + 1)).slice(-2),
