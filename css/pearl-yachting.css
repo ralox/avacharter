@@ -50,7 +50,8 @@ a {
 	color: inherit;
 }
 
-a:hover {
+a:hover,
+a:focus {
 	-webkit-transition: color 300ms;
 	-moz-transition: color 300ms;
 	transition: color 300ms;
@@ -263,7 +264,8 @@ p {
 	border: none;
 }
 
-.overlay-action:hover {
+.overlay-action:hover,
+.overlay-action:focus {
 	cursor: pointer;
 	-webkit-transition: background-color 300ms;
 	-moz-transition: background-color 300ms;
@@ -371,7 +373,8 @@ p {
 	border-radius: 0.2em;
 }
 
-.primary-button:hover {
+.primary-button:hover,
+.primary-button:focus {
 	cursor: pointer;
 	background: rgba(250, 210, 140,1);
 	box-shadow: 0 0 1.5em 0 rgba(250, 220, 200,0.4);
