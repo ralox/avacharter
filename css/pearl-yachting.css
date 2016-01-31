@@ -380,6 +380,29 @@ p {
 	box-shadow: 0 0 1.5em 0 rgba(250, 220, 200,0.4);
 }
 
+.feedback {
+	font-size: 1.1em;
+	width: 100%;
+	border-radius: 0.2em;
+	padding: 1em;
+	border-left: 1px solid;
+	border-bottom: 1px solid;
+}
+
+.failure {
+	background: #fcc;
+	border-color: #f22;
+}
+
+.success {
+	background: #cea;
+	border-color: #4a2;
+}
+
+.g-recaptcha {
+	margin-top: 2em;
+}
+
 
 /*================================================*\
 |//////////////////// TOOLS \\\\\\\\\\\\\\\\\\\\\\\|
