@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<?php include 'head.php' ?>
+		<title>AVA - Gallery</title>
 		<link rel="stylesheet" type="text/css" href="css/gallery.css">
 	</head>
 	<body>

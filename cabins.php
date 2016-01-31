@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<?php include 'head.php' ?>
+		<title>AVA - Cabins</title>
 		<link rel="stylesheet" type="text/css" href="css/cabins.css">
 	</head>
 	<body>

@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<?php include 'head.php' ?>
+		<title>AVA - Decks</title>
 		<link rel="stylesheet" type="text/css" href="css/decks.css">
 	</head>
 	<body>

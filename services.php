@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<?php include 'head.php' ?>
+		<title>AVA - Services</title>
 		<link rel="stylesheet" type="text/css" href="css/services.css">
 	</head>
 	<body>

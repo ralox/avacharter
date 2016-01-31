@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<?php include 'head.php' ?>
+		<title>AVA - Luxury Yacht Charters</title>
 		<link rel="stylesheet" type="text/css" href="css/home.css">
 	</head>
 	<body>
